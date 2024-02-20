@@ -1,0 +1,66 @@
+:root {
+  --pc: #9a55f3;
+  --sc: #1a374d;
+  --tc: #406882;
+  --oc: #adcbd7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fafafa;
+  height: 100vh;
+  text-align: center;
+}
+header {
+  height: 20vh;
+  color: var(--pc);
+
+  background-size: 100% 100%;
+}
+header h1 {
+  background: #1a374d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.progress-container {
+  width: 75vw;
+  height: 2rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  background: #fafafa;
+  border: 0.5px solid var(--pc);
+  border-radius: 1rem;
+  overflow: clip;
+}
+.progress-bar {
+  background-color: #9a55f3;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  font-weight: bold;
+}
+button {
+  padding: 1rem;
+  border: 0.5px solid var(--sc);
+  background-color: #1a374d;
+  color: var(--oc);
+  margin: 1rem auto;
+  font-weight: bold;
+  border-radius: 4px;
+}
+button:hover {
+  background: var(--oc);
+  color: var(--sc);
+  transition: all 1s;
+  cursor: pointer;
+}
